@@ -4,11 +4,12 @@
   "description": "REST API's con Express y Typescript",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon --exec ts-node src/index.ts",
-    "build": "tcs",
-    "test": "jest --detectOpenHandles",
-    "test:coverage": "npm run pretest && jest --detectOpenHandles --coverage",
-    "pretest": "ts-node ./src/data --clear"
+      "dev": "nodemon --exec ts-node src/index.ts",
+      "build": "tsc", 
+      "start": "node dist/index.js",
+      "test": "jest --detectOpenHandles",
+      "test:coverage": "npm run pretest && jest --detectOpenHandles --coverage",
+      "pretest": "ts-node ./src/data --clear"
   },
   "author": "Juan De la torre @codigoconjuan",
   "license": "ISC",
